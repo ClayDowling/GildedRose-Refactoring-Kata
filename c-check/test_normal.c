@@ -1,10 +1,8 @@
 #include <check.h>
 #include "GildedRose.h"
+#include "test_suites.h"
 
 #define NORMAL_ITEM "Elixer of Mongoose"
-
-TCase *tcase_brie(void);
-TCase *tcase_backstage(void);
 
 START_TEST(normalitem_whenSellInPositive_decreasesQualityByOne)
 {

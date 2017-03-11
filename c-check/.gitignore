@@ -1,3 +1,4 @@
 *.o
+*.gch
 test_gildedrose
 golden_rose
