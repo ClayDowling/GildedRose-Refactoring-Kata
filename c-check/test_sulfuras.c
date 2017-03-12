@@ -33,6 +33,16 @@ START_TEST(sufuras_atNegativeDays_willNotChangeFromStartingValue)
 }
 END_TEST
 
+START_TEST(sulfuras_byDefault_doesNotDecreasesSellInByOneEachDay)
+{
+  Item items[1];
+  init_item(items, SULFURAS, 5, 60);
+  update_quality(items, 1);
+
+  ck_assert_int_eq(5, items[0].sellIn);
+}
+END_TEST
+
 TCase *tcase_sulfuras(void)
 {
   TCase *tc = tcase_create("sulfuras");
@@ -40,6 +50,7 @@ TCase *tcase_sulfuras(void)
   tcase_add_test(tc, sulfuras_at10days_doesNotDecrease);
   tcase_add_test(tc, sufuras_at10Days_willNotChangeFromStartingValue);
   tcase_add_test(tc, sufuras_atNegativeDays_willNotChangeFromStartingValue);
+  tcase_add_test(tc, sulfuras_byDefault_doesNotDecreasesSellInByOneEachDay);
 
   return tc;
 }
