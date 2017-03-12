@@ -68,15 +68,3 @@ TCase *tcase_normal(void)
 
   return tc;
 }
-
-Suite *suite_normal(void)
-{
-  Suite *s;
-
-  s = suite_create("characterization-tests");
-  suite_add_tcase(s, tcase_normal());
-  suite_add_tcase(s, tcase_brie());
-  suite_add_tcase(s, tcase_backstage());
-
-  return s;
-}

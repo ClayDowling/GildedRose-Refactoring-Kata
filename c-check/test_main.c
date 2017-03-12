@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <check.h>
-
-Suite *suite_normal(void);
+#include "test_suites.h"
 
 int main(int argc, char **argv)
 {
@@ -15,7 +14,7 @@ int main(int argc, char **argv)
     forkme = 0;
   }
 
-  s = suite_normal();
+  s = suite_characterization();
   runner = srunner_create(s);
 
   if (0 == forkme) {
