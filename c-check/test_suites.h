@@ -7,6 +7,7 @@ TCase *tcase_brie(void);
 TCase *tcase_backstage(void);
 TCase *tcase_normal(void);
 TCase *tcase_sulfuras(void);
+TCase *tcase_gildeditem(void);
 
 Suite *suite_characterization(void);
 

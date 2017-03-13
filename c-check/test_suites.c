@@ -10,6 +10,7 @@ Suite *suite_characterization(void)
   suite_add_tcase(s, tcase_brie());
   suite_add_tcase(s, tcase_backstage());
   suite_add_tcase(s, tcase_sulfuras());
+  suite_add_tcase(s, tcase_gildeditem());
 
   return s;
 }

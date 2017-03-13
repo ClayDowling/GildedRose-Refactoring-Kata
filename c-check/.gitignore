@@ -2,3 +2,9 @@
 *.gch
 test_gildedrose
 golden_rose
+
+*.config
+*.creator.user
+*.creator
+*.files
+*.includes
